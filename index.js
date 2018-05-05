@@ -11,4 +11,6 @@ const BASE_URL = '/ecache/api';
 router.use(BASE_URL, routers.routes());
 app.use(router.routes());
 
-app.listen(8899);
+app.listen(8899, () => {
+  console.log('服务启动成功！8899')
+});
